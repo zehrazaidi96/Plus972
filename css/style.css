@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* --------------------------Plus972 logo text and heading section--------------------- */
+
+.home {
+    background-color: black;
+    height: 100vh;
+}
+
+.home>.row {
+    height: 100%;
+}
+
+.home>.row>.col-md-6 {
+    position: relative;
+}
+
+.LHS {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.logo-img {
+    padding: 20px 0px 70px 0px;
+}
+
+.home-text {
+    font-size: 20px;
+}
+
+.home-heading {
+    margin-top: 10px;
+}
+
+.home-text,
+.home-heading {
+    color: #ffffff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    padding: 160px 0px 20px 0px;
+}
+
+.social-icons ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social-icons ul li {
+    list-style: none !important;
+    display: inline;
+    padding-left: 10px;
+}
+
+.social-icons ul li a {
+    text-decoration: none !important;
+    display: inline-block;
+    width: 52px;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: #ffffff;
+}
+
+.social-icons ul li a:hover {
+    color: #a7a7a7 !important;
+    opacity: 0.6;
+}
+
+.copyright {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.copyright a:active {
+    color: #fff !important;
+}
+
+.special-text {
+    text-decoration: none !important;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.special-text:hover {
+    color: #a7a7a7 !important;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* -------------------------Video Section------------------------------ */
+
+video#myVideo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    height: 100vh;
+}
+
+/* -----------------------Music wave css--------------------------------- */
+.wrap {
+    position: fixed;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+}
+
+.wrap .music-wave {
+    cursor: pointer !important;
+    width: 100px;
+    height: 75px;
+    background: transparent !important;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: 1s all;
+}
+
+.wrap span {
+    height: 20px;
+    border-radius: 20px;
+    width: 20px;
+    background-color: #FEE1C0;
+    display: block;
+    transition: 5s all;
+    margin-right: 3px;
+}
+
+.wrap .animate span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.wrap .animate span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.wrap .animate span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.wrap .animate span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.wrap .animate span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.wrap .animate span:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.wrap .animate span {
+    animation: wave .7s infinite ease-in-out;
+    transition: 5s all;
+}
+
+@keyframes wave {
+    50% {
+        height: 100%;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home-text {
+        font-size: 14px !important;
+    }
+
+    .home-heading {
+        font-size: 18px !important;
+    }
+
+    .logo-img {
+        padding: 30px 0px 80px 0px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+
+    .social-icons {
+        padding: 110px 0px 20px 0px !important;
+    }
+
+}
